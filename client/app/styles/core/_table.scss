@@ -1,0 +1,34 @@
+.table-section {
+  .search {
+    margin: 15px 0px;
+
+    .search-label {
+      width: 100%;
+    }
+  }
+
+  .csv {
+    .react-bs-table-csv-btn {
+      &:hover {
+        background-color: $theme-light-blue;
+        color: $white;
+      }
+    }
+  }
+
+  .react-bootstrap-table {
+    .table {
+      overflow-x: scroll;
+      display: block;
+      margin: 20px 0px;
+
+      td,
+      th {
+        white-space: nowrap;
+        text-overflow: unset;
+        overflow-wrap: break-word;
+        width: 100%;
+      }
+    }
+  }
+}

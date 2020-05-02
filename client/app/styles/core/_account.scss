@@ -1,0 +1,56 @@
+.account {
+  .info {
+    margin: 20px 0px 10px 0px;
+    @include flex();
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+
+    p,
+    span {
+      margin: 0;
+      margin-right: 10px;
+    }
+
+    span {
+      padding: 5px;
+      border-radius: $border-radius-default;
+      background-color: $theme-light-blue;
+      color: $white;
+    }
+  }
+
+  .checkbox {
+    margin-top: 20px;
+  }
+}
+
+// start reset password form styles
+.reset-form {
+  position: relative;
+  margin: 10px 0px;
+  padding: 15px;
+  background: $white;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  -webkit-box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
+  @include transition($layout-transition-higher-speed);
+}
+
+.reset-form-open {
+  .reset-form {
+    opacity: 1;
+    height: 100%;
+    visibility: visible;
+    @include transition($layout-transition-higher-speed);
+  }
+
+  .dark-overflow {
+    @include dark-overflow();
+  }
+}
+// end reset password form styles

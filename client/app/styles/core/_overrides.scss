@@ -1,0 +1,46 @@
+// overrides styles
+
+// start bootstrap overrides
+.form-control {
+  &:focus {
+    box-shadow: $box-shadow;
+  }
+}
+
+.btn {
+  min-width: 150px;
+  border: $border-default !important;
+  border-width: 3px !important;
+  font-weight: $font-weight-bold-two;
+  color: $theme-black !important;
+  background-color: $btn-bg;
+  -webkit-transition: $layout-transition-speed;
+  transition: $layout-transition-speed;
+
+  &:hover {
+    color: $white !important;
+    background-color: $btn-bg-hover;
+    -webkit-transition: $layout-transition-speed;
+    transition: $layout-transition-speed;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.lead {
+  font-size: $font-size-medium;
+}
+
+// end bootstrap overrides
+
+// start react-notification-system-redux overrides
+
+.notification {
+  .notification-title {
+    font-weight: $font-weight-normal !important;
+  }
+}
+
+// end react-notification-system-redux overrides

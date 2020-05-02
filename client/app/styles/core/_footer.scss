@@ -1,0 +1,126 @@
+// footer styles
+
+.footer {
+  flex-shrink: 0;
+  border-top: $border-default;
+}
+
+.footer-content {
+  @include flex();
+  padding-top: 20px;
+  margin: 0 auto;
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+  }
+}
+
+.footer-block {
+  width: 100%;
+  margin: 0px 15px;
+  border-right: $border-default;
+  padding: 20px 20px 40px 0;
+
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+    margin: 10px 0px;
+    border-right: none;
+    border-bottom: $border-default;
+    padding: 20px 0px;
+  }
+
+  &:last-child {
+    border-right: 0;
+    border-bottom: 0;
+  }
+
+  .block-title {
+    padding-bottom: 10px;
+
+    h2 {
+      color: $red !important;
+    }
+  }
+
+  .footer-link {
+    padding-bottom: 4px;
+
+    a {
+      &:hover {
+        // color: $red !important;
+        color: $theme-black !important;
+      }
+    }
+  }
+}
+
+/*
+ * Social Icons
+ */
+
+.footer-social-item {
+  text-align: center;
+  span,
+  a {
+    display: inline-block;
+    vertical-align: top;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  li {
+    padding-bottom: 8px;
+    margin: 0 auto;
+    display: inline-block;
+    @include media-breakpoint-down(sm) {
+      margin: 0 4px;
+    }
+
+    a {
+      margin-left: 10px;
+      @include media-breakpoint-down(sm) {
+        display: block;
+        margin-left: 0px;
+      }
+    }
+  }
+
+  .facebook-icon {
+    @include icon($facebook, 40px, 40px);
+    background-size: 100%;
+  }
+
+  .instagram-icon {
+    @include icon($instagram, 40px, 40px);
+    background-size: 100%;
+  }
+
+  .pinterest-icon {
+    @include icon($pinterest, 40px, 40px);
+    background-size: 100%;
+  }
+
+  .twitter-icon {
+    @include icon($twitter, 40px, 40px);
+    background-size: 100%;
+  }
+}
+
+/*
+ * Copyright
+ */
+
+.footer-copyright {
+  text-align: center;
+  padding: 15px 0px;
+}
+
+/*
+ * Contact us block
+ */
+
+.contact-us-block {
+  text-align: center;
+  padding: 15px 0px;
+}

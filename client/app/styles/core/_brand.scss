@@ -1,0 +1,36 @@
+.brand {
+  .table-section {
+    margin: 20px 0px;
+  }
+
+  .desc-column {
+    @include text-ellipsis(2);
+  }
+}
+
+.brand-list {
+  .brand-box {
+    padding: 10px;
+    border: $border-default;
+
+    &:hover {
+      border-color: $theme-black;
+      -moz-transition: border-color $layout-transition-speed ease-in-out;
+      -webkit-transition: border-color $layout-transition-speed ease-in-out;
+      -ms-transition: border-color $layout-transition-speed ease-in-out;
+      transition: border-color $layout-transition-speed ease-in-out;
+    }
+
+    .brand-desc {
+      max-height: 40px;
+      overflow: hidden;
+    }
+
+    h1 {
+      a {
+        font-size: $font-size-heading-small !important;
+        color: $red !important;
+      }
+    }
+  }
+}

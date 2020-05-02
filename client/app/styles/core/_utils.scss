@@ -1,0 +1,38 @@
+// utils styles
+
+.no-data {
+  text-align: center;
+  margin: 20px 0px;
+  color: $red;
+}
+
+.message-box {
+  p {
+    margin: 0;
+    text-transform: capitalize;
+  }
+}
+
+// set bootstrap column's padding to 0
+.col-no-padding {
+  padding: 0;
+}
+
+.fa {
+  font-size: $font-size-small !important;
+}
+
+.signup-provider {
+  @include flex();
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  cursor: pointer;
+
+  span {
+    margin: 10px;
+  }
+}
