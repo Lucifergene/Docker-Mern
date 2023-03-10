@@ -231,17 +231,19 @@ The docker-compose logs will dump logs of all the running services.
 
 To stop all the services, we use docker-compose stop.
 
-Using docker-compose down --volumes brings everything down, removing the containers entirely, with the data volume of the services.
+Using `docker-compose down --volumes` brings everything down, removing the containers entirely, with the data volume of the services.
 
 **Finally, we have successfully dockerized our E-Commerce Web app.**
 
 You can find the final GitHub Repo link below:
+
 [**Lucifergene/Docker-Mern**
 *Contribute to Lucifergene/Docker-Mern development by creating an account on GitHub.* github.com](https://github.com/Lucifergene/Docker-Mern)
 
 ## Official Docs
 [**Overview of Docker Compose**
 *Looking for Compose file reference? Find the latest version here. Compose is a tool for defining and running…* docs.docker.com](https://docs.docker.com/compose/)
+
 [**Empowering App Development for Developers | Docker**
 *A 1-day digital event on May 28th featuring sessions from Docker experts and the broader container community, a live…* www.docker.com](https://www.docker.com/)
 
